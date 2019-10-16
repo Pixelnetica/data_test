@@ -1,0 +1,1 @@
+dir *.pxz -name | % {$_ -replace( "`r`n", "`n")} | Out-File list -Encoding UTF8
