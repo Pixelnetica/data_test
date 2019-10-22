@@ -1,2 +1,1 @@
-# Concatente to single string, replace CRLF and write  
-dir *.pxz -name | Out-String | % {$_.replace( "`r`n", "`n")} | Out-File list -Encoding ASCII -NoNewLine
+dir *.pxz -name | Out-File list -Encoding UTF8
